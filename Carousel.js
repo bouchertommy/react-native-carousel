@@ -129,8 +129,9 @@ var Carousel = React.createClass({
           pagingEnabled={true}
           showsHorizontalScrollIndicator={false}
           bounces={false}
-          onScrollBeginDrag={this._onAnimationBegin}
+          onScroll={this._onAnimationBegin}
           onMomentumScrollEnd={this._onAnimationEnd}
+          onScrollAnimationEnd={this._onAnimationEnd}
           scrollsToTop={false}
         >
           {this.props.children}
